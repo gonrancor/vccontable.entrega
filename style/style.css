@@ -93,13 +93,7 @@ footer a {
 .main__Index{
     align-items: center;
 }
-.main__Slide {
-    height: 300px;
-    width: auto;
-    margin: 15px 0px;
-    display: flex;
-    justify-content: space-around;
-}
+
 .main__Article {
     display: flex;
     flex-direction: row;
