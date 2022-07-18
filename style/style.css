@@ -187,9 +187,6 @@ footer a {
 .centrado {
     text-align: center;
 }
-.mapita {
-    align-self: center;
-}
 .nosotros__oficina {
     display: flex;
     justify-content: space-around;
@@ -210,6 +207,8 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 40rem;
+    margin: 0 auto;
 }
 .nosotros__imagenes {
     display: flex;
@@ -311,9 +310,9 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-self: center;
         width: 70vw;
         margin: 0 auto;
-        align-self: center;
     }
     /*media query de pantalla "que-ofrecemos" */
     .conteiner__ofrecemos {
