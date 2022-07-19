@@ -60,6 +60,7 @@ footer {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-top: 15px;
 }
 footer a {
     text-decoration: none;
@@ -93,7 +94,9 @@ footer a {
 .main__Index{
     align-items: center;
 }
-
+.slide img {
+    height: 50vh;
+}
 .main__Article {
     display: flex;
     flex-direction: row;
@@ -181,6 +184,9 @@ footer a {
 .centrado {
     text-align: center;
 }
+.list-group {
+    margin: 20px 40vw;
+}
 .nosotros__oficina {
     display: flex;
     justify-content: space-around;
@@ -242,6 +248,7 @@ footer a {
 .nav__ofrecemos {
     grid-area: nav;
 }
+
 .texto__contacto {
     font-family: 'Acme', sans-serif;
     font-size: larger;
@@ -338,5 +345,8 @@ footer a {
     .main__Article {
         display: flex;
         flex-direction: column;
+    }
+    .list-group {
+        margin: 0 10px;
     }
 }
