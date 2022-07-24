@@ -1,0 +1,230 @@
+@import "_vars";
+@import "_fonts";
+@import "_navbar";
+@import "_commons";
+@import "_footer";
+
+//index// 
+.index__logo {
+    height: 250px;
+    width: 250px;
+    margin: 15px 0;
+}
+.main__Index{
+    align-items: center;
+}
+.slide img {
+    height: 34vh;
+}
+.v-80 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.latido {
+    margin: 15px 0px;
+    animation: latido 2s;
+    color: brown;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+@keyframes latido {
+    from { transform: none; }
+    50% { transform: scale(1.1); }
+    to { transform: none; }
+}
+//end index//
+
+//quienes-somos// 
+.main__Article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.qs__Figure {
+    text-align: center;
+}
+.main__figure {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+.figure__imagen {
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+.figure__figcapt {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(24, 7, 41);
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+.head__queOfrecemos {
+    margin: 20px 0px;
+}
+.nosotros__oficina {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.nosotros__presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nosotros__profile {
+    display: flex;
+    margin: 15px 15%;
+    padding: 15px 20px;
+    text-align: center;
+}
+.nosotros__map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40rem;
+    margin: 0 auto;
+}
+.nosotros__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+//end quienes-somos// 
+
+// pagina contacto.html // 
+main {
+        .main__Contacto {
+            text-align: center;
+            h2 {
+                .titulo {
+                    font-size: 3em;
+                    color: $colorTitulo;
+                    text-align: center;
+                    font-family: 'Acme', sans-serif;
+                }
+            }
+                .fa-envelope {
+                    font-size: 7em;
+                    text-align: center;
+                    }
+                .fa-whatsapp {
+                    font-size: 7em;
+                    text-align: center;
+                    }
+        }
+        .texto__contacto {
+            font-family: 'Acme', sans-serif;
+            font-size: larger;
+            font-weight: 400;
+            margin: 20px 10px;
+            animation: fade-inout 1s infinite alternate;
+            transform-origin: center;
+        }
+        .contenedor__link{
+            margin: 15px 0px;
+            .link__cuestionario {
+                text-decoration: none;
+                color: blueviolet;
+                font-family: 'Acme', sans-serif;
+                font-size: 1.5em;
+            }
+        }
+}
+@keyframes fade-inout {
+    0%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+// ends contacto // 
+
+// que ofrecemos // 
+.article__queOfrecemos {
+    width: fit-content;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.aside__ofrecemos {
+    grid-area: aside;
+    border-right: solid black;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.conteiner__ofrecemos {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav"
+    "titulo titulo"
+    "aside main"
+    "pie pie";
+}
+.pie__ofrecemos {
+    grid-area: pie;
+    background-color: #FF946F;
+}
+.main__ofrecemos {
+    grid-area: main;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.titulo__ofrecemos {
+    grid-area: titulo;
+    margin: 20px 0;
+}
+.nav__ofrecemos {
+    grid-area: nav;
+}
+.fa-headphones {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-magnifying-glass {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-calculator {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-folder-open {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-hand-holding-dollar {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-cc-visa {
+    font-size: 7em;
+    text-align: center;
+}
+.fa-paypal {
+    font-size: 7em;
+    text-align: center;
+}
+// ends que ofrecemos// 
+
+// queremos conocerte // 
+.contacto__form {
+    margin: 15px;
+    text-align: center;
+}
+// ends queremos conocerte // 
+// descargas // 
+.list-group {
+    margin: 20px 40vw;
+}
+// ends descargas // 
+
+@import "_mediaq";

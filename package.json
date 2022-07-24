@@ -1,0 +1,25 @@
+{
+  "name": "vc-contable-proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch sass/main.scss  style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonrancor/vccontable.entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonrancor/vccontable.entrega/issues"
+  },
+  "homepage": "https://github.com/gonrancor/vccontable.entrega#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
