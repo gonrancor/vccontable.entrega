@@ -62,7 +62,7 @@ body {
   margin: 15px 0;
 }
 
-.titulo {
+.titulo, main .main__Contacto h2 {
   font-size: 3em;
   color: #4b0566;
   text-align: center;
@@ -80,6 +80,19 @@ body {
 a, a:visited {
   text-decoration: none;
   color: none;
+}
+
+/* extends */
+.imgFonts, .fa-paypal, .fa-cc-visa, .fa-hand-holding-dollar, .fa-folder-open, .fa-calculator, .fa-magnifying-glass, .fa-headphones {
+  font-size: 7em;
+  text-align: center;
+}
+
+.titulo, main .main__Contacto h2 {
+  font-size: 3.2em;
+  color: #4b0566;
+  text-align: center;
+  font-family: "Acme", sans-serif;
 }
 
 footer {
@@ -219,12 +232,6 @@ footer a .fa-brands {
 main .main__Contacto {
   text-align: center;
 }
-main .main__Contacto h2 .titulo {
-  font-size: 3em;
-  color: #4b0566;
-  text-align: center;
-  font-family: "Acme", sans-serif;
-}
 main .main__Contacto .fa-envelope {
   font-size: 7em;
   text-align: center;
@@ -297,46 +304,11 @@ main .contenedor__link .link__cuestionario {
 
 .titulo__ofrecemos {
   grid-area: titulo;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .nav__ofrecemos {
   grid-area: nav;
-}
-
-.fa-headphones {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-magnifying-glass {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-calculator {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-folder-open {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-hand-holding-dollar {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-cc-visa {
-  font-size: 7em;
-  text-align: center;
-}
-
-.fa-paypal {
-  font-size: 7em;
-  text-align: center;
 }
 
 .contacto__form {

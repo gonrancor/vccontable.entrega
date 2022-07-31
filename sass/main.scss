@@ -2,6 +2,7 @@
 @import "_fonts";
 @import "_navbar";
 @import "_commons";
+@import "_mixings";
 @import "_footer";
 
 //index// 
@@ -10,6 +11,7 @@
     width: 250px;
     margin: 15px 0;
 }
+
 .main__Index{
     align-items: center;
 }
@@ -99,42 +101,37 @@
 
 // pagina contacto.html // 
 main {
-        .main__Contacto {
+    .main__Contacto {
+        text-align: center;
+        h2 {
+            @extend .titulo;
+        }
+        .fa-envelope {
+            font-size: 7em;
             text-align: center;
-            h2 {
-                .titulo {
-                    font-size: 3em;
-                    color: $colorTitulo;
-                    text-align: center;
-                    font-family: 'Acme', sans-serif;
-                }
-            }
-                .fa-envelope {
-                    font-size: 7em;
-                    text-align: center;
-                    }
-                .fa-whatsapp {
-                    font-size: 7em;
-                    text-align: center;
-                    }
         }
-        .texto__contacto {
+        .fa-whatsapp {
+            font-size: 7em;
+            text-align: center;
+        }
+    }
+    .texto__contacto {
+        font-family: 'Acme', sans-serif;
+        font-size: larger;
+        font-weight: 400;
+        margin: 20px 10px;
+        animation: fade-inout 1s infinite alternate;
+        transform-origin: center;
+    }
+    .contenedor__link{
+        margin: 15px 0px;
+        .link__cuestionario {
+            text-decoration: none;
+            color: blueviolet;
             font-family: 'Acme', sans-serif;
-            font-size: larger;
-            font-weight: 400;
-            margin: 20px 10px;
-            animation: fade-inout 1s infinite alternate;
-            transform-origin: center;
+            font-size: 1.5em;
         }
-        .contenedor__link{
-            margin: 15px 0px;
-            .link__cuestionario {
-                text-decoration: none;
-                color: blueviolet;
-                font-family: 'Acme', sans-serif;
-                font-size: 1.5em;
-            }
-        }
+    }
 }
 @keyframes fade-inout {
     0%{ opacity: 1;}
@@ -180,38 +177,31 @@ main {
 }
 .titulo__ofrecemos {
     grid-area: titulo;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .nav__ofrecemos {
     grid-area: nav;
 }
 .fa-headphones {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-magnifying-glass {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-calculator {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-folder-open {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-hand-holding-dollar {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-cc-visa {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 .fa-paypal {
-    font-size: 7em;
-    text-align: center;
+    @extend .imgFonts;
 }
 // ends que ofrecemos// 
 
