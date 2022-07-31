@@ -95,6 +95,7 @@ a, a:visited {
   font-family: "Acme", sans-serif;
 }
 
+/* maps */
 footer {
   background-color: #FF946F;
   width: 100%;
@@ -145,7 +146,7 @@ footer a .fa-brands {
 .latido {
   margin: 15px 0px;
   animation: latido 2s;
-  color: brown;
+  color: #074DFF;
   font-family: "Lobster", cursive;
   font-weight: 400;
 }

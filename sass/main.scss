@@ -28,7 +28,7 @@
 .latido {
     margin: 15px 0px;
     animation: latido 2s;
-    color: brown;
+    color: map-get($map: $paleta, $key: "invierno");
     font-family: 'Lobster', cursive;
     font-weight: 400;
 }

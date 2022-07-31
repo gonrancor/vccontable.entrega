@@ -9,5 +9,12 @@
     font-size: 3.2em;
     color: $colorTitulo;
     text-align: center;
-    font-family: 'Acme', sans-serif;
+    font-family: $font_titulo;
 }
+
+/* maps */ 
+$paleta: (
+    "verano": #FFFB56,
+    "otoño": #B04604,
+    "invierno": #074DFF,
+    "primavera": #30FB6D,);
