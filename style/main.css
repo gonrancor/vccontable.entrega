@@ -311,7 +311,7 @@ a figcaption .figure__figcapt {
   text-align: center;
 }
 .body-contacto .latido {
-  margin: 15px 0px;
+  margin: 15px 20px;
   animation: latido 2s;
   color: black;
   font-family: "Roboto Serif", serif;
@@ -455,6 +455,12 @@ a figcaption .figure__figcapt {
     display: none;
   }
   /*media query para index*/
+  .conteiner-index {
+    height: 50vh;
+  }
+  .nav__name {
+    font-size: 0.9em;
+  }
   .h1-index {
     margin-top: 15px;
   }
