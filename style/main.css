@@ -101,13 +101,21 @@ footer a .fa-brands {
   font-size: 3em;
   margin: 30px;
   text-decoration: none;
+  color: rgb(55, 55, 255);
+}
+footer a .fa-brands:hover {
+  text-decoration: none;
+  color: rgb(55, 55, 255);
+}
+footer a:hover {
+  text-decoration: none;
 }
 
 .footer__info {
   font-weight: 500;
   font-size: 2em;
   font-family: "Roboto", sans-serif;
-  color: #4b0566;
+  color: rgb(55, 55, 255);
   align-self: center;
 }
 
@@ -163,7 +171,7 @@ footer a .fa-brands {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 .main__Article {
@@ -360,6 +368,7 @@ a figcaption .figure__figcapt {
   border-right: solid black;
   margin-left: 15px;
   margin-bottom: 15px;
+  padding-right: 5px;
 }
 
 .pie__ofrecemos {

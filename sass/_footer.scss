@@ -12,6 +12,14 @@ footer {
             font-size: 3em;
             margin: 30px;
             text-decoration: none;
+            color: rgb(55, 55, 255);
+            &:hover {
+                text-decoration: none;
+                color: rgb(55, 55, 255);
+            }
+        }
+        &:hover {
+            text-decoration: none;
         }
     }
 }
@@ -19,7 +27,7 @@ footer {
     font-weight: 500;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
-    color: $colorTitulo;
+    color: rgb(55, 55, 255);
     align-self: center;
 }
 .footer-contacto{
