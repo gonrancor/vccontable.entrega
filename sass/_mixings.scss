@@ -12,6 +12,12 @@
     font-family: $font_titulo;
 }
 
+.texto {
+    font-family: $font_texto;
+    font-size: 1.6em;
+    margin: 20px 15px;
+}
+
 /* maps */ 
 $paleta: (
     "verano": #FFFB56,

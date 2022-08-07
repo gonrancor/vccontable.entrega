@@ -18,24 +18,33 @@
 .slide img {
     height: 34vh;
 }
-.v-80 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
 
 .latido {
     margin: 15px 0px;
     animation: latido 2s;
-    color: map-get($map: $paleta, $key: "invierno");
-    font-family: 'Lobster', cursive;
+    color: black;
+    font-family: $font_texto;
     font-weight: 400;
+    font-size: 1.5em;
 }
 @keyframes latido {
     from { transform: none; }
     50% { transform: scale(1.1); }
     to { transform: none; }
+}
+.conteiner-index {
+    background: url(../img/oficext.jpg) no-repeat center center fixed;
+    height: 50vh; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .main__Article {
         display: flex;
@@ -124,10 +133,10 @@
 
 //quienes-somos// 
 
-.qs__Figure {
-    text-align: center;
+.card {
+    align-items: center;
+    margin: 10px 10px;
 }
-
 .nosotros__oficina {
     display: flex;
     justify-content: space-around;
@@ -147,20 +156,28 @@
     display: flex;
     margin: 15px 15%;
     padding: 15px 20px;
-    text-align: center;
     justify-content: center;
+}
+.qs__Figure {
+    text-align: center;
+    background-color: #fff0e2;
+}
+.qs__Figure:hover {
+    background-color: rgb(244, 229, 245);
+    transform: scale(1.05);
 }
 .nosotros__map {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40rem;
+    width: 35rem;
     margin: 0 auto;
 }
 .nosotros__imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    text-align: center;
+    margin: 15px 30%;
 }
 //end quienes-somos// 
 
@@ -182,17 +199,18 @@ main {
     }
     .texto__contacto {
         font-family: 'Acme', sans-serif;
-        font-size: larger;
+        font-size: 2em;
         font-weight: 400;
         margin: 20px 10px;
-        animation: fade-inout 1s infinite alternate;
+        color: map-get($map: $paleta, $key: "invierno");
+        animation: fade-inout 1.5s infinite alternate;
         transform-origin: center;
     }
     .contenedor__link{
         margin: 15px 0px;
         .link__cuestionario {
             text-decoration: none;
-            color: blueviolet;
+            color: map-get($map: $paleta, $key: "invierno");
             font-family: 'Acme', sans-serif;
             font-size: 1.5em;
         }

@@ -1,5 +1,4 @@
 nav {
-  background-color: rgba(238, 91, 5, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,10 +43,6 @@ nav ul li a:visited:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-image: url(../img/pb2.jpg);
 }
 
 .fondoal {
@@ -95,6 +90,12 @@ a, a:visited {
   font-family: "Acme", sans-serif;
 }
 
+.texto {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.6em;
+  margin: 20px 15px;
+}
+
 /* maps */
 footer {
   background-color: #FF946F;
@@ -136,19 +137,13 @@ footer a .fa-brands {
   height: 34vh;
 }
 
-.v-80 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .latido {
   margin: 15px 0px;
   animation: latido 2s;
-  color: #074DFF;
-  font-family: "Lobster", cursive;
+  color: black;
+  font-family: "Roboto Serif", serif;
   font-weight: 400;
+  font-size: 1.5em;
 }
 
 @keyframes latido {
@@ -162,6 +157,21 @@ footer a .fa-brands {
     transform: none;
   }
 }
+.conteiner-index {
+  background: url(../img/oficext.jpg) no-repeat center center fixed;
+  height: 50vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .main__Article {
   display: flex;
   flex-direction: row;
@@ -233,8 +243,9 @@ a figcaption .figure__figcapt {
   align-self: center;
 }
 
-.qs__Figure {
-  text-align: center;
+.card {
+  align-items: center;
+  margin: 10px 10px;
 }
 
 .nosotros__oficina {
@@ -259,22 +270,32 @@ a figcaption .figure__figcapt {
   display: flex;
   margin: 15px 15%;
   padding: 15px 20px;
-  text-align: center;
   justify-content: center;
+}
+
+.qs__Figure {
+  text-align: center;
+  background-color: #fff0e2;
+}
+
+.qs__Figure:hover {
+  background-color: rgb(244, 229, 245);
+  transform: scale(1.05);
 }
 
 .nosotros__map {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40rem;
+  width: 35rem;
   margin: 0 auto;
 }
 
 .nosotros__imagenes {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  text-align: center;
+  margin: 15px 30%;
 }
 
 main .main__Contacto {
@@ -290,10 +311,11 @@ main .main__Contacto .fa-whatsapp {
 }
 main .texto__contacto {
   font-family: "Acme", sans-serif;
-  font-size: larger;
+  font-size: 2em;
   font-weight: 400;
   margin: 20px 10px;
-  animation: fade-inout 1s infinite alternate;
+  color: #074DFF;
+  animation: fade-inout 1.5s infinite alternate;
   transform-origin: center;
 }
 main .contenedor__link {
@@ -301,7 +323,7 @@ main .contenedor__link {
 }
 main .contenedor__link .link__cuestionario {
   text-decoration: none;
-  color: blueviolet;
+  color: #074DFF;
   font-family: "Acme", sans-serif;
   font-size: 1.5em;
 }
@@ -381,8 +403,8 @@ main .contenedor__link .link__cuestionario {
   .nosotros__imagenes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    margin: 15px 0;
   }
   .nosotros__oficina {
     display: flex;
@@ -415,7 +437,10 @@ main .contenedor__link .link__cuestionario {
   footer {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 10vh;
+  }
+  .footer__info {
+    display: none;
   }
   /*media query para index*/
   .main__Article {

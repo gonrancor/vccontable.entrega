@@ -1,6 +1,6 @@
 nav {
     .container-fluid {
-        background-color: rgba(238, 91, 5, 0.5);
+        background-color: $navColor;
     }
     .nav__name{
         font-family: 'Lobster', cursive;
@@ -14,7 +14,6 @@ nav {
             color: black;
         }
     }
-    background-color: $navColor;
     display: flex;
     justify-content: space-between;
     align-items: center;

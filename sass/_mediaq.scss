@@ -15,8 +15,8 @@
     .nosotros__imagenes {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+        text-align: center;
+        margin: 15px 0;
     }
     .nosotros__oficina {
         display: flex;
@@ -54,7 +54,10 @@
     footer {
         display: flex;
         flex-direction: column;
-        height: fit-content;
+        height: 10vh;
+    }
+    .footer__info {
+        display: none;
     }
     /*media query para index*/
     .main__Article {
