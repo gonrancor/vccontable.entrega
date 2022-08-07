@@ -204,16 +204,16 @@
         }
     }
     .latido {
-        margin: 15px 20px;
+        margin: 15px 30px;
         animation: latido 2s;
         color: black;
         font-family: $font_texto;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     @keyframes latido {
         from { transform: none; }
-        50% { transform: scale(1.1); }
+        50% { transform: scale(1.08); }
         to { transform: none; }
     }
     .contenedor__link{
