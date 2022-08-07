@@ -182,15 +182,20 @@
 //end quienes-somos// 
 
 // pagina contacto.html // 
-main {
+.body-contacto {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     .main__Contacto {
         text-align: center;
+        margin: 20px 0;
         h2 {
             @extend .titulo;
         }
         .fa-envelope {
             font-size: 7em;
             text-align: center;
+            margin: 20px 0;
         }
         .fa-whatsapp {
             font-size: 7em;
@@ -207,7 +212,7 @@ main {
         transform-origin: center;
     }
     .contenedor__link{
-        margin: 15px 0px;
+        margin: 20px 0px;
         .link__cuestionario {
             text-decoration: none;
             color: map-get($map: $paleta, $key: "invierno");
@@ -216,10 +221,12 @@ main {
         }
     }
 }
+
 @keyframes fade-inout {
     0%{ opacity: 1;}
     100%{ opacity: 0;}
 }
+
 // ends contacto // 
 
 // que ofrecemos // 
@@ -291,9 +298,16 @@ main {
 }
 // ends queremos conocerte // 
 // descargas // 
-.list-group {
-    margin: 20px 40vw;
+.body-descargas{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .list-group {
+        margin: 20px 30%;
+        text-align: center
+    }
 }
+
 // ends descargas // 
 
 @import "_mediaq";

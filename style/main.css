@@ -57,7 +57,7 @@ nav ul li a:visited:hover {
   margin: 15px 0;
 }
 
-.titulo, main .main__Contacto h2 {
+.titulo, .body-contacto .main__Contacto h2 {
   font-size: 3em;
   color: #4b0566;
   text-align: center;
@@ -83,7 +83,7 @@ a, a:visited {
   text-align: center;
 }
 
-.titulo, main .main__Contacto h2 {
+.titulo, .body-contacto .main__Contacto h2 {
   font-size: 3.2em;
   color: #4b0566;
   text-align: center;
@@ -121,6 +121,14 @@ footer a .fa-brands {
   font-family: "Roboto", sans-serif;
   color: #4b0566;
   align-self: center;
+}
+
+.footer-contacto {
+  margin-top: auto;
+}
+
+.footer-descargas {
+  margin-top: auto;
 }
 
 .index__logo {
@@ -298,18 +306,25 @@ a figcaption .figure__figcapt {
   margin: 15px 30%;
 }
 
-main .main__Contacto {
-  text-align: center;
+.body-contacto {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-main .main__Contacto .fa-envelope {
+.body-contacto .main__Contacto {
+  text-align: center;
+  margin: 20px 0;
+}
+.body-contacto .main__Contacto .fa-envelope {
+  font-size: 7em;
+  text-align: center;
+  margin: 20px 0;
+}
+.body-contacto .main__Contacto .fa-whatsapp {
   font-size: 7em;
   text-align: center;
 }
-main .main__Contacto .fa-whatsapp {
-  font-size: 7em;
-  text-align: center;
-}
-main .texto__contacto {
+.body-contacto .texto__contacto {
   font-family: "Acme", sans-serif;
   font-size: 2em;
   font-weight: 400;
@@ -318,10 +333,10 @@ main .texto__contacto {
   animation: fade-inout 1.5s infinite alternate;
   transform-origin: center;
 }
-main .contenedor__link {
-  margin: 15px 0px;
+.body-contacto .contenedor__link {
+  margin: 20px 0px;
 }
-main .contenedor__link .link__cuestionario {
+.body-contacto .contenedor__link .link__cuestionario {
   text-decoration: none;
   color: #074DFF;
   font-family: "Acme", sans-serif;
@@ -386,8 +401,14 @@ main .contenedor__link .link__cuestionario {
   text-align: center;
 }
 
-.list-group {
-  margin: 20px 40vw;
+.body-descargas {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body-descargas .list-group {
+  margin: 20px 30%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -418,6 +439,9 @@ main .contenedor__link .link__cuestionario {
     width: 70vw;
     margin: 0 auto;
   }
+  .text-card {
+    font-size: 1.2em;
+  }
   /*media query de pantalla "que-ofrecemos" */
   .conteiner__ofrecemos {
     display: grid;
@@ -443,6 +467,9 @@ main .contenedor__link .link__cuestionario {
     display: none;
   }
   /*media query para index*/
+  .h1-index {
+    margin-top: 15px;
+  }
   .main__Article {
     display: flex;
     flex-direction: column;

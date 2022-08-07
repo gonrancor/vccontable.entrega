@@ -30,6 +30,9 @@
         width: 70vw;
         margin: 0 auto;
     }
+    .text-card{
+        font-size: 1.2em;
+    }
     /*media query de pantalla "que-ofrecemos" */
     .conteiner__ofrecemos {
         display: grid;
@@ -60,6 +63,9 @@
         display: none;
     }
     /*media query para index*/
+    .h1-index {
+        margin-top: 15px;
+    }
     .main__Article {
         display: flex;
         flex-direction: column;
@@ -74,4 +80,5 @@
         display: flex;
         margin: 0 auto;
     }
+
 }
