@@ -19,19 +19,7 @@
     height: 34vh;
 }
 
-.latido {
-    margin: 15px 0px;
-    animation: latido 2s;
-    color: black;
-    font-family: $font_texto;
-    font-weight: 400;
-    font-size: 1.5em;
-}
-@keyframes latido {
-    from { transform: none; }
-    50% { transform: scale(1.1); }
-    to { transform: none; }
-}
+
 .conteiner-index {
     background: url(../img/oficext.jpg) no-repeat center center fixed;
     height: 50vh; 
@@ -45,6 +33,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.novedades {
+    font-family: 'Acme', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px 10px;
+    color: map-get($map: $paleta, $key: "invierno");
+    animation: fade-inout 1.5s infinite alternate;
+    transform-origin: center;
+}
+@keyframes fade-inout {
+    0%{ opacity: 1;}
+    100%{ opacity: 0;}
 }
 .main__Article {
         display: flex;
@@ -202,14 +203,18 @@
             text-align: center;
         }
     }
-    .texto__contacto {
-        font-family: 'Acme', sans-serif;
-        font-size: 2em;
+    .latido {
+        margin: 15px 0px;
+        animation: latido 2s;
+        color: black;
+        font-family: $font_texto;
         font-weight: 400;
-        margin: 20px 10px;
-        color: map-get($map: $paleta, $key: "invierno");
-        animation: fade-inout 1.5s infinite alternate;
-        transform-origin: center;
+        font-size: 1.5em;
+    }
+    @keyframes latido {
+        from { transform: none; }
+        50% { transform: scale(1.1); }
+        to { transform: none; }
     }
     .contenedor__link{
         margin: 20px 0px;
@@ -220,11 +225,6 @@
             font-size: 1.5em;
         }
     }
-}
-
-@keyframes fade-inout {
-    0%{ opacity: 1;}
-    100%{ opacity: 0;}
 }
 
 // ends contacto // 

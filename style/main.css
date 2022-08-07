@@ -45,18 +45,6 @@ nav ul li a:visited:hover {
   box-sizing: border-box;
 }
 
-.fondoal {
-  width: 100%;
-  height: auto;
-}
-
-.h1__index {
-  font-size: 3em;
-  color: #4b0566;
-  font-family: "Acme", sans-serif;
-  margin: 15px 0;
-}
-
 .titulo, .body-contacto .main__Contacto h2 {
   font-size: 3em;
   color: #4b0566;
@@ -145,26 +133,6 @@ footer a .fa-brands {
   height: 34vh;
 }
 
-.latido {
-  margin: 15px 0px;
-  animation: latido 2s;
-  color: black;
-  font-family: "Roboto Serif", serif;
-  font-weight: 400;
-  font-size: 1.5em;
-}
-
-@keyframes latido {
-  from {
-    transform: none;
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  to {
-    transform: none;
-  }
-}
 .conteiner-index {
   background: url(../img/oficext.jpg) no-repeat center center fixed;
   height: 50vh;
@@ -180,6 +148,24 @@ footer a .fa-brands {
   text-align: center;
 }
 
+.novedades {
+  font-family: "Acme", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 20px 10px;
+  color: #074DFF;
+  animation: fade-inout 1.5s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes fade-inout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .main__Article {
   display: flex;
   flex-direction: row;
@@ -324,14 +310,24 @@ a figcaption .figure__figcapt {
   font-size: 7em;
   text-align: center;
 }
-.body-contacto .texto__contacto {
-  font-family: "Acme", sans-serif;
-  font-size: 2em;
+.body-contacto .latido {
+  margin: 15px 0px;
+  animation: latido 2s;
+  color: black;
+  font-family: "Roboto Serif", serif;
   font-weight: 400;
-  margin: 20px 10px;
-  color: #074DFF;
-  animation: fade-inout 1.5s infinite alternate;
-  transform-origin: center;
+  font-size: 1.5em;
+}
+@keyframes latido {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: none;
+  }
 }
 .body-contacto .contenedor__link {
   margin: 20px 0px;
@@ -343,14 +339,6 @@ a figcaption .figure__figcapt {
   font-size: 1.5em;
 }
 
-@keyframes fade-inout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .conteiner__ofrecemos {
   display: grid;
   grid-template-columns: 20vw 79vw;
