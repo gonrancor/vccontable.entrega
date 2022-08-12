@@ -132,7 +132,7 @@ footer a:hover {
 .index__logo {
   height: 250px;
   width: 250px;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .main__Index {
@@ -145,7 +145,6 @@ footer a:hover {
 
 .conteiner-index {
   background: url(../img/oficext.jpg) no-repeat center center fixed;
-  height: 50vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -156,6 +155,10 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.texto-paralax {
+  margin: 20px 0;
 }
 
 .novedades {
@@ -351,13 +354,14 @@ a figcaption .figure__figcapt {
 
 .conteiner__ofrecemos {
   display: grid;
-  grid-template-columns: 20vw 79vw;
+  grid-template-columns: 20vw auto;
   grid-template-rows: auto;
   grid-template-areas: "nav nav" "titulo titulo" "aside main" "pie pie";
 }
 
 .article__queOfrecemos {
   margin: 15px;
+  padding: 15px;
   justify-content: center;
   text-align: center;
   display: flex;
@@ -398,6 +402,17 @@ a figcaption .figure__figcapt {
 .contacto__form {
   margin: 15px;
   text-align: center;
+}
+.contacto__form .btn {
+  color: #4b0566;
+  background-color: rgba(238, 91, 5, 0.5);
+  font-family: "Acme", sans-serif;
+  margin: 5px;
+}
+.contacto__form .btn:hover {
+  background-color: rgba(238, 91, 5, 0.5);
+  color: #4b0566;
+  transform: scale(1.1);
 }
 
 .body-descargas {

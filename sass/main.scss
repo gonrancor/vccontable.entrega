@@ -9,7 +9,7 @@
 .index__logo {
     height: 250px;
     width: 250px;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .main__Index{
@@ -22,7 +22,6 @@
 
 .conteiner-index {
     background: url(../img/oficext.jpg) no-repeat center center fixed;
-    height: 50vh; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,6 +32,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.texto-paralax {
+    margin: 20px 0;
 }
 .novedades {
     font-family: 'Acme', sans-serif;
@@ -233,7 +235,7 @@
 
 .conteiner__ofrecemos {
     display: grid;
-    grid-template-columns: 20vw 79vw;
+    grid-template-columns: 20vw auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav nav"
@@ -243,6 +245,7 @@
 }
 .article__queOfrecemos {
     margin: 15px;
+    padding: 15px;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -296,7 +299,19 @@
 .contacto__form {
     margin: 15px;
     text-align: center;
+    .btn {
+        color: $colorTitulo;
+        background-color: $navColor;
+        font-family: $font_titulo;
+        margin: 5px;
+        &:hover {
+            background-color: $navColor;
+            color: $colorTitulo;
+            transform: scale(1.1);
+        }
+    }
 }
+
 // ends queremos conocerte // 
 // descargas // 
 .body-descargas{
