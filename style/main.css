@@ -425,6 +425,11 @@ a figcaption .figure__figcapt {
   text-align: center;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
   .main__nosotros {
     grid-template-columns: 100vw;

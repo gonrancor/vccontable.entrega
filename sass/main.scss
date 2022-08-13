@@ -325,5 +325,9 @@
 }
 
 // ends descargas // 
+.error {
+    display: flex;
+    flex-direction: column;
+}
 
 @import "_mediaq";
