@@ -498,7 +498,7 @@ a figcaption .figure__figcapt {
   }
   /*media query para index*/
   .conteiner-index {
-    height: 50vh;
+    height: auto;
   }
   .nav__name {
     font-size: 0.9em;
@@ -523,12 +523,13 @@ a figcaption .figure__figcapt {
 }
 @media (max-width: 420px) {
   footer {
-    display: flex;
-    flex-direction: column;
     height: 20vh;
   }
   .conteiner-index {
     height: auto;
+  }
+  .nav__name {
+    font-size: 25px;
   }
 }
 
