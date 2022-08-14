@@ -166,12 +166,14 @@
         margin: 10px 10px;
     }
 }
-
-.nosotros__oficina {
+.nosotros__map {
     display: flex;
-    justify-content: space-around;
-    margin: 15px;
+    flex-direction: column;
+    justify-content: center;
+    width: 35rem;
+    margin: 0 auto;
 }
+
 .nombres {
     font-family: $font_titulo;
     font-size: 2em;
@@ -180,13 +182,7 @@
 
 
 
-.nosotros__map {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 35rem;
-    margin: 0 auto;
-}
+
 .nosotros__imagenes {
     display: flex;
     flex-direction: column;

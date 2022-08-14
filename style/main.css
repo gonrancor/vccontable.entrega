@@ -282,24 +282,18 @@ a figcaption .figure__figcapt {
   margin: 10px 10px;
 }
 
-.nosotros__oficina {
-  display: flex;
-  justify-content: space-around;
-  margin: 15px;
-}
-
-.nombres {
-  font-family: "Acme", sans-serif;
-  font-size: 2em;
-  color: #4b0566;
-}
-
 .nosotros__map {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 35rem;
   margin: 0 auto;
+}
+
+.nombres {
+  font-family: "Acme", sans-serif;
+  font-size: 2em;
+  color: #4b0566;
 }
 
 .nosotros__imagenes {
