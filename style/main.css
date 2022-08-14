@@ -68,7 +68,7 @@ a, a:visited {
 }
 
 /* extends */
-.imgFonts, .fa-paypal, .fa-cc-visa, .fa-hand-holding-dollar, .fa-magnifying-glass, a .fa-hand-point-down, .fa-headphones, .fa-folder-open, .fa-calculator {
+.imgFonts, .conteiner__ofrecemos .main__ofrecemos .article__queOfrecemos .fa-paypal, .conteiner__ofrecemos .main__ofrecemos .article__queOfrecemos .fa-cc-visa, .conteiner__ofrecemos .main__ofrecemos .article__queOfrecemos .fa-hand-holding-dollar, .conteiner__ofrecemos .main__ofrecemos .article__queOfrecemos .fa-magnifying-glass, a .fa-hand-point-down, .fa-headphones, .fa-folder-open, .fa-calculator {
   font-size: 7em;
   text-align: center;
 }
@@ -250,7 +250,34 @@ a figcaption .figure__figcapt {
   align-self: center;
 }
 
-.card {
+.nosotros__presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nosotros__profile {
+  display: flex;
+  margin: 15px 15%;
+  padding: 15px 20px;
+  justify-content: center;
+  /* aca no uso & para el hover porque automaticamente junta el efecto para ambas
+  cards a la vez. Si lo dejo como .qs__Figure:hover toma el efecto por separado 
+  para cada una de las cards. Solo por ese motivo evito el correcto uso de la semantica */
+}
+.nosotros__profile .qs__Figure {
+  text-align: center;
+  background-color: #fff0e2;
+}
+.nosotros__profile .qs__Figure .img-fluid {
+  width: 300px;
+  height: 300px;
+}
+.nosotros__profile .qs__Figure:hover {
+  background-color: rgb(244, 229, 245);
+  transform: scale(1.05);
+}
+.nosotros__profile .card {
   align-items: center;
   margin: 10px 10px;
 }
@@ -265,29 +292,6 @@ a figcaption .figure__figcapt {
   font-family: "Acme", sans-serif;
   font-size: 2em;
   color: #4b0566;
-}
-
-.nosotros__presentacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nosotros__profile {
-  display: flex;
-  margin: 15px 15%;
-  padding: 15px 20px;
-  justify-content: center;
-}
-
-.qs__Figure {
-  text-align: center;
-  background-color: #fff0e2;
-}
-
-.qs__Figure:hover {
-  background-color: rgb(244, 229, 245);
-  transform: scale(1.05);
 }
 
 .nosotros__map {
@@ -358,8 +362,14 @@ a figcaption .figure__figcapt {
   grid-template-rows: auto;
   grid-template-areas: "nav nav" "titulo titulo" "aside main" "pie pie";
 }
-
-.article__queOfrecemos {
+.conteiner__ofrecemos .main__ofrecemos {
+  grid-area: main;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.conteiner__ofrecemos .main__ofrecemos .article__queOfrecemos {
   margin: 15px;
   padding: 15px;
   justify-content: center;
@@ -368,34 +378,22 @@ a figcaption .figure__figcapt {
   flex-direction: column;
   background-color: #fff0e2;
 }
-
-.aside__ofrecemos {
+.conteiner__ofrecemos .aside__ofrecemos {
   grid-area: aside;
   border-right: solid black;
   margin-left: 15px;
   margin-bottom: 15px;
   padding-right: 5px;
 }
-
-.pie__ofrecemos {
+.conteiner__ofrecemos .pie__ofrecemos {
   grid-area: pie;
   background-color: #FF946F;
 }
-
-.main__ofrecemos {
-  grid-area: main;
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-}
-
-.titulo__ofrecemos {
+.conteiner__ofrecemos .titulo__ofrecemos {
   grid-area: titulo;
   margin: 15px 0;
 }
-
-.nav__ofrecemos {
+.conteiner__ofrecemos .nav__ofrecemos {
   grid-area: nav;
 }
 
@@ -450,6 +448,7 @@ a figcaption .figure__figcapt {
   .nosotros__profile {
     flex-wrap: wrap;
     align-items: center;
+    margin: 15px 10px;
   }
   .nosotros__imagenes {
     display: flex;
@@ -530,6 +529,9 @@ a figcaption .figure__figcapt {
   }
   .nav__name {
     font-size: 25px;
+  }
+  .error {
+    margin-top: 20px;
   }
 }
 

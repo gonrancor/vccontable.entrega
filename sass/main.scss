@@ -136,20 +136,6 @@
 
 //quienes-somos// 
 
-.card {
-    align-items: center;
-    margin: 10px 10px;
-}
-.nosotros__oficina {
-    display: flex;
-    justify-content: space-around;
-    margin: 15px;
-}
-.nombres {
-    font-family: $font_titulo;
-    font-size: 2em;
-    color: $colorTitulo;
-}
 .nosotros__presentacion {
     display: flex;
     flex-direction: column;
@@ -160,15 +146,40 @@
     margin: 15px 15%;
     padding: 15px 20px;
     justify-content: center;
+    .qs__Figure {
+        text-align: center;
+        background-color: #fff0e2;
+        .img-fluid {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .qs__Figure:hover {
+        background-color: rgb(244, 229, 245);
+        transform: scale(1.05);
+    }
+    /* aca no uso & para el hover porque automaticamente junta el efecto para ambas
+    cards a la vez. Si lo dejo como .qs__Figure:hover toma el efecto por separado 
+    para cada una de las cards. Solo por ese motivo evito el correcto uso de la semantica */
+    .card {
+        align-items: center;
+        margin: 10px 10px;
+    }
 }
-.qs__Figure {
-    text-align: center;
-    background-color: #fff0e2;
+
+.nosotros__oficina {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
 }
-.qs__Figure:hover {
-    background-color: rgb(244, 229, 245);
-    transform: scale(1.05);
+.nombres {
+    font-family: $font_titulo;
+    font-size: 2em;
+    color: $colorTitulo;
 }
+
+
+
 .nosotros__map {
     display: flex;
     flex-direction: column;
@@ -232,7 +243,6 @@
 // ends contacto // 
 
 // que ofrecemos // 
-
 .conteiner__ofrecemos {
     display: grid;
     grid-template-columns: 20vw auto;
@@ -242,55 +252,55 @@
     "titulo titulo"
     "aside main"
     "pie pie";
-}
-.article__queOfrecemos {
-    margin: 15px;
-    padding: 15px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff0e2;
-}
-.aside__ofrecemos {
-    grid-area: aside;
-    border-right: solid black;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    padding-right: 5px;
-}
-
-.pie__ofrecemos {
-    grid-area: pie;
-    background-color: #FF946F;
-}
-.main__ofrecemos {
-    grid-area: main;
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-}
-.titulo__ofrecemos {
-    grid-area: titulo;
-    margin: 15px 0;
-}
-.nav__ofrecemos {
-    grid-area: nav;
-}
-
-.fa-magnifying-glass {
-    @extend .imgFonts;
-}
-
-.fa-hand-holding-dollar {
-    @extend .imgFonts;
-}
-.fa-cc-visa {
-    @extend .imgFonts;
-}
-.fa-paypal {
-    @extend .imgFonts;
+    .main__ofrecemos {
+        grid-area: main;
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        .article__queOfrecemos {
+            margin: 15px;
+            padding: 15px;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff0e2;
+            .fa-magnifying-glass {
+                @extend .imgFonts;
+            }        
+            .fa-hand-holding-dollar {
+                @extend .imgFonts;
+            }
+                    .fa-cc-visa {
+                @extend .imgFonts;
+            }
+                    .fa-paypal {
+                @extend .imgFonts;
+            }
+        }
+    }
+    .aside__ofrecemos {
+        grid-area: aside;
+        border-right: solid black;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        padding-right: 5px;
+    }
+    
+    .pie__ofrecemos {
+        grid-area: pie;
+        background-color: #FF946F;
+    }
+    
+    .titulo__ofrecemos {
+        grid-area: titulo;
+        margin: 15px 0;
+    }
+    .nav__ofrecemos {
+        grid-area: nav;
+    }
+    
 }
 
 // ends que ofrecemos// 

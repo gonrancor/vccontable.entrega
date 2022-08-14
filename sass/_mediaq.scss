@@ -11,6 +11,7 @@
     .nosotros__profile {
         flex-wrap: wrap;
         align-items: center;
+        margin: 15px 10px;
     }
     .nosotros__imagenes {
         display: flex;
@@ -99,4 +100,8 @@ footer {
 .nav__name{
     font-size: 25px;
 }
+.error {
+    margin-top: 20px;
+}
+
 }
