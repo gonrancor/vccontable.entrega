@@ -88,3 +88,14 @@
     }
 
 }
+
+@media (max-width: 420px) {
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+.conteiner-index {
+    height: auto;
+}
+}

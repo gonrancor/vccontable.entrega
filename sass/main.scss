@@ -325,9 +325,22 @@
 }
 
 // ends descargas // 
+
 .error {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    .h-error {
+        font-family: $font_texto;
+        font-size: 3em;
+        text-align: center;
+    }
+    #calculadora {
+        height: 450px;
+        width: 550px;
+    }
+    
 }
 
 @import "_mediaq";

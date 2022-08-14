@@ -428,6 +428,17 @@ a figcaption .figure__figcapt {
 .error {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+}
+.error .h-error {
+  font-family: "Roboto Serif", serif;
+  font-size: 3em;
+  text-align: center;
+}
+.error #calculadora {
+  height: 450px;
+  width: 550px;
 }
 
 @media (max-width: 768px) {
@@ -508,6 +519,16 @@ a figcaption .figure__figcapt {
   .v-80 {
     display: flex;
     margin: 0 auto;
+  }
+}
+@media (max-width: 420px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .conteiner-index {
+    height: auto;
   }
 }
 
