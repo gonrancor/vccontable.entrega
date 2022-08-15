@@ -6,6 +6,13 @@ footer {
     text-align: center;
     justify-content: center;
     margin-top: 15px;
+    .footer__info {
+        font-weight: 500;
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(55, 55, 255);
+        align-self: center;
+    }
     a {
         text-decoration: none;
         .fa-brands {
@@ -23,13 +30,7 @@ footer {
         }
     }
 }
-.footer__info {
-    font-weight: 500;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(55, 55, 255);
-    align-self: center;
-}
+
 .footer-contacto{
     margin-top: auto;
 }

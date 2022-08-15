@@ -58,7 +58,7 @@
     footer {
         display: flex;
         flex-direction: column;
-        height: 20vh;
+        height: 15vh;
     }
     .footer__info {
         display: none;
@@ -99,7 +99,7 @@
 
 @media (max-width: 420px) {
     footer {
-        height: 20vh;
+        height: 15vh;
     }
     .conteiner-index {
         height: auto;

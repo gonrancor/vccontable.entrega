@@ -96,6 +96,13 @@ footer {
   justify-content: center;
   margin-top: 15px;
 }
+footer .footer__info {
+  font-weight: 500;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  color: rgb(55, 55, 255);
+  align-self: center;
+}
 footer a {
   text-decoration: none;
 }
@@ -111,14 +118,6 @@ footer a .fa-brands:hover {
 }
 footer a:hover {
   text-decoration: none;
-}
-
-.footer__info {
-  font-weight: 500;
-  font-size: 2em;
-  font-family: "Roboto", sans-serif;
-  color: rgb(55, 55, 255);
-  align-self: center;
 }
 
 .footer-contacto {
@@ -470,7 +469,7 @@ a figcaption .figure__figcapt {
   footer {
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    height: 15vh;
   }
   .footer__info {
     display: none;
@@ -510,7 +509,7 @@ a figcaption .figure__figcapt {
 }
 @media (max-width: 420px) {
   footer {
-    height: 20vh;
+    height: 15vh;
   }
   .conteiner-index {
     height: auto;
