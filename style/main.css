@@ -479,9 +479,6 @@ a figcaption .figure__figcapt {
   .conteiner-index {
     height: auto;
   }
-  .nav__name {
-    font-size: 0.9em;
-  }
   .h1-index {
     margin-top: 15px;
   }
@@ -494,10 +491,6 @@ a figcaption .figure__figcapt {
   }
   .slide img {
     height: 34vh;
-  }
-  .v-80 {
-    display: flex;
-    margin: 0 auto;
   }
   .error {
     display: flex;
@@ -523,7 +516,7 @@ a figcaption .figure__figcapt {
     height: auto;
   }
   .nav__name {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
 /* cargo este import abajo porque no lo tomaba sino. */
