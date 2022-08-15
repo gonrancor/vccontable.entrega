@@ -414,7 +414,7 @@ a figcaption .figure__figcapt {
   font-size: 3em;
   text-align: center;
 }
-.error #calculadora {
+.error .calculadora {
   height: 450px;
   width: 550px;
 }
@@ -499,19 +499,31 @@ a figcaption .figure__figcapt {
     display: flex;
     margin: 0 auto;
   }
+  .error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .error .h-error {
+    font-family: "Roboto Serif", serif;
+    font-size: 3em;
+    text-align: center;
+  }
+  .error .calculadora {
+    height: 180px;
+    width: 180px;
+  }
 }
 @media (max-width: 420px) {
   footer {
-    height: 10vh;
+    height: 20vh;
   }
   .conteiner-index {
     height: auto;
   }
   .nav__name {
-    font-size: 25px;
-  }
-  .error {
-    margin-top: 20px;
+    font-size: 15px;
   }
 }
 /* cargo este import abajo porque no lo tomaba sino. */
