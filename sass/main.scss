@@ -6,19 +6,6 @@
 @import "_footer";
 
 //index// 
-.index__logo {
-    height: 250px;
-    width: 250px;
-    margin: 20px 0;
-}
-
-.main__Index{
-    align-items: center;
-}
-.slide img {
-    height: 34vh;
-}
-
 
 .conteiner-index {
     background: url(../img/oficext.jpg) no-repeat center center fixed;
@@ -32,10 +19,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    .texto-paralax {
+        margin: 20px 0;
+    }
+    .index__logo {
+        height: 250px;
+        width: 250px;
+        margin: 20px 0;
+    }
 }
-.texto-paralax {
-    margin: 20px 0;
-}
+
 .novedades {
     font-family: 'Acme', sans-serif;
     font-size: 2em;
@@ -126,11 +119,6 @@
                 }
             }
 }
-.figure__imagen {
-    height: 200px;
-    width: 200px;
-    align-self: center;
-}
 
 //end index//
 
@@ -153,6 +141,11 @@
             width: 300px;
             height: 300px;
         }
+        .nombres {
+            font-family: $font_titulo;
+            font-size: 2em;
+            color: $colorTitulo;
+        }
     }
     .qs__Figure:hover {
         background-color: rgb(244, 229, 245);
@@ -172,16 +165,10 @@
     justify-content: center;
     width: 35rem;
     margin: 0 auto;
+    .mapa {
+        height: 350px;
+    }
 }
-
-.nombres {
-    font-family: $font_titulo;
-    font-size: 2em;
-    color: $colorTitulo;
-}
-
-
-
 
 .nosotros__imagenes {
     display: flex;
@@ -189,6 +176,7 @@
     text-align: center;
     margin: 15px 30%;
 }
+
 //end quienes-somos// 
 
 // pagina contacto.html // 
@@ -283,12 +271,10 @@
         margin-bottom: 15px;
         padding-right: 5px;
     }
-    
     .pie__ofrecemos {
         grid-area: pie;
         background-color: #FF946F;
     }
-    
     .titulo__ofrecemos {
         grid-area: titulo;
         margin: 15px 0;
@@ -296,7 +282,6 @@
     .nav__ofrecemos {
         grid-area: nav;
     }
-    
 }
 
 // ends que ofrecemos// 
@@ -346,7 +331,8 @@
         height: 450px;
         width: 550px;
     }
-    
 }
 
 @import "_mediaq";
+
+/* cargo este import abajo porque no lo tomaba sino. */ 

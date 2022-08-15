@@ -28,7 +28,7 @@
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        width: 70vw;
+        width: 90vw;
         margin: 0 auto;
     }
     .text-card{
@@ -58,7 +58,7 @@
     footer {
         display: flex;
         flex-direction: column;
-        height: 10vh;
+        height: 20vh;
     }
     .footer__info {
         display: none;
@@ -92,7 +92,7 @@
 
 @media (max-width: 420px) {
 footer {
-    height: 20vh;
+    height: 10vh;
 }
 .conteiner-index {
     height: auto;

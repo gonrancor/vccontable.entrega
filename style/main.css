@@ -129,20 +129,6 @@ footer a:hover {
   margin-top: auto;
 }
 
-.index__logo {
-  height: 250px;
-  width: 250px;
-  margin: 20px 0;
-}
-
-.main__Index {
-  align-items: center;
-}
-
-.slide img {
-  height: 34vh;
-}
-
 .conteiner-index {
   background: url(../img/oficext.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -156,8 +142,12 @@ footer a:hover {
   justify-content: center;
   text-align: center;
 }
-
-.texto-paralax {
+.conteiner-index .texto-paralax {
+  margin: 20px 0;
+}
+.conteiner-index .index__logo {
+  height: 250px;
+  width: 250px;
   margin: 20px 0;
 }
 
@@ -244,12 +234,6 @@ a figcaption .figure__figcapt {
   font-family: "Acme", sans-serif;
 }
 
-.figure__imagen {
-  height: 200px;
-  width: 200px;
-  align-self: center;
-}
-
 .nosotros__presentacion {
   display: flex;
   flex-direction: column;
@@ -273,6 +257,11 @@ a figcaption .figure__figcapt {
   width: 300px;
   height: 300px;
 }
+.nosotros__profile .qs__Figure .nombres {
+  font-family: "Acme", sans-serif;
+  font-size: 2em;
+  color: #4b0566;
+}
 .nosotros__profile .qs__Figure:hover {
   background-color: rgb(244, 229, 245);
   transform: scale(1.05);
@@ -289,11 +278,8 @@ a figcaption .figure__figcapt {
   width: 35rem;
   margin: 0 auto;
 }
-
-.nombres {
-  font-family: "Acme", sans-serif;
-  font-size: 2em;
-  color: #4b0566;
+.nosotros__map .mapa {
+  height: 350px;
 }
 
 .nosotros__imagenes {
@@ -459,7 +445,7 @@ a figcaption .figure__figcapt {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
   }
   .text-card {
@@ -484,7 +470,7 @@ a figcaption .figure__figcapt {
   footer {
     display: flex;
     flex-direction: column;
-    height: 10vh;
+    height: 20vh;
   }
   .footer__info {
     display: none;
@@ -516,7 +502,7 @@ a figcaption .figure__figcapt {
 }
 @media (max-width: 420px) {
   footer {
-    height: 20vh;
+    height: 10vh;
   }
   .conteiner-index {
     height: auto;
@@ -528,5 +514,6 @@ a figcaption .figure__figcapt {
     margin-top: 20px;
   }
 }
+/* cargo este import abajo porque no lo tomaba sino. */
 
 /*# sourceMappingURL=main.css.map */
